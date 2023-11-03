@@ -1,17 +1,18 @@
 import "./App.css";
 import React from "react";
-import Slider from "./components/Slider";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import Home from "./pages/home.jsx"
+
+
+
 function App() {
 
   return (
-    <div className="w-full bg-black  ">
-      <Navbar></Navbar>
-      
-      
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,66 @@
+
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgb(22, 15, 15) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed:20s;
+
+//Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-290px * 6))}
+}
+@keyframes scroll-reverse {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(290px * 6))}
+}
+
+.slider {
+	background: transparent;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100%;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		width: calc(288px * 12);
+	}
+	.slide-track-reverse {
+		animation: scroll-reverse  $animationSpeed linear infinite;
+		width: calc(288px * 12);
+		right: 0;
+		position: absolute;
+	}
+	// .slide-track:hover{
+	// 	animation-play-state: paused;
+	// }
+	
+	
+	
+	
+}

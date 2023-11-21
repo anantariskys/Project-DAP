@@ -18,7 +18,7 @@ export default {
     }, 
   },
   plugins: [
-    // eslint-disable-next-line no-undef
+    
     
     // eslint-disable-next-line no-undef
     require('tailwindcss-animated')

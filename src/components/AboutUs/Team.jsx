@@ -1,4 +1,6 @@
-import React from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
 import ijul from '../../assets/aboutUs/ijul.svg'
 import nanta from '../../assets/aboutUs/nanta.svg'
 import alif from '../../assets/aboutUs/alif.svg'
@@ -12,11 +14,19 @@ import linkedin from '../../assets/aboutUs/linkedin.svg'
 import ig from '../../assets/aboutUs/ig.svg'
 import fb from '../../assets/aboutUs/fb.svg'
 const Team = () => {
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    
+        
+        return () => {
+          Aos.refresh();
+        };
+      }, []);
   return (
-    <div className="mt-28">
-      <h1 className=" top-40 font-Poppins text-5xl font-extrabold text-white text-center mb-20">JKtole Team’s</h1>
+    <div  className="mt-28">
+      <h1  className=" top-40 font-Poppins text-5xl font-extrabold text-white text-center mb-20">JKtole Team’s</h1>
       <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-20 mb-16">
-        <div className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] hover:rotate-12   duration-200 ease-in-out "> 
+        <div data-aos="zoom-in" className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] hover:rotate-12   duration-200 ease-in-out "> 
             <img draggable='false' src={ijul_backGround} alt="" className="z-0 w-full aspect-video object-cover blur-[1px] rounded-t-[1.8rem]  " />
             <img draggable='false' src={ijul} alt="" className="z-30 mx-auto object-cover  -mt-[6.8rem] rounded-full relative" />
             <div className="bg-white w-full z-20 -mt-16 pt-20 rounded-[1.8rem] pb-12 relative">
@@ -35,7 +45,7 @@ const Team = () => {
                 </div>
             </div>
         </div>
-        <div  className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
+        <div data-aos="zoom-in"  className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
             <img draggable='false' src={achan_backGround} alt="" className="z-0 w-full blur-[1px] aspect-video object-cover rounded-t-[1.8rem]  " />
             <img draggable='false' src={achan} alt="" className="z-30 mx-auto object-cover -mt-[6.8rem] rounded-full relative" />
             <div className="bg-white w-full z-20 -mt-16 pt-20 rounded-[1.8rem] pb-12 relative">
@@ -54,7 +64,7 @@ const Team = () => {
                 </div>
             </div>
         </div>
-        <div className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
+        <div data-aos="zoom-in" className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
             <img draggable='false' src={alif_backGround} alt="" className="z-0 w-full blur-[1px] aspect-video object-cover rounded-t-[1.8rem]  " />
             <img draggable='false' src={alif} alt="" className="z-30 mx-auto object-cover -mt-[6.8rem] rounded-full relative" />
             <div className="bg-white w-full z-20 -mt-16 pt-20 rounded-[1.8rem] pb-12 relative">
@@ -73,7 +83,7 @@ const Team = () => {
                 </div>
             </div>
         </div>
-        <div className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
+        <div data-aos="zoom-in" className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
             <img src={nanta_backGround} alt="" draggable='false' className="z-0 w-full blur-[1px] aspect-video object-cover rounded-t-[1.8rem]  " />
             <img src={nanta} alt="" draggable='false' className="z-30 mx-auto object-cover -mt-[6.8rem] rounded-full relative" />
             <div className="bg-white w-full z-20 -mt-16 pt-20 rounded-[1.8rem] pb-12 relative">
@@ -92,12 +102,12 @@ const Team = () => {
                 </div>
             </div>
         </div>
-        <div  className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
+        <div  data-aos="zoom-in" className="w-80 bg-[#3D3D3D]  rounded-[1.8rem] "> 
             <img draggable='false' src={alif_backGround} alt=""  className="z-0 w-full blur-[1px] aspect-video object-cover rounded-t-[1.8rem]  " />
             <img draggable='false' src={wilson} alt="" className="z-30 mx-auto object-cover -mt-[6.8rem] rounded-full relative" />
             <div className="bg-white w-full z-20 -mt-16 pt-20 rounded-[1.8rem] pb-12 relative">
                 <h2 className="font-Poppins text-2xl text-center font-black">WILSON HAMONANGAN</h2>
-                <p className="font-Poppins text-xl text-center font-medium mb-11">Frontend, UX Designer</p>
+                <p className="font-Poppins text-xl text-center font-medium mb-11">UI/UX Designer</p>
                 <div className="flex justify-center gap-3">
                     <div className="h-11 w-11 bg-[#CCCCCC] rounded-full flex justify-center items-center ">
                         <img src={linkedin} alt="" />

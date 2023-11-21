@@ -1,11 +1,25 @@
-import React from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
 import logo from "../assets/logo.svg";
 import { Link } from 'react-router-dom';
+import ig from "../assets/ig.svg"
+import yt from "../assets/yt.svg"
+import tele from "../assets/tele.svg"
+import fb from "../assets/fb.svg"
 const judul = "JalanKodeku </>";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+
+    
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
   return (
-    <div className="bg-[#111111] w-full  flex flex-col lg:px-40 md:px-14 px-8 pb-9 md:pt-20 pt-10 " >
+    <div data-aos="fade-up" className="bg-[#111111] w-full  flex flex-col lg:px-40 md:px-14 px-8 pb-9 md:pt-20 pt-10 " >
       <div className="flex flex-col">
         <div className="flex flex-row ">
           <img src={logo} alt="" className="md:w-16 w-9" />
@@ -25,7 +39,7 @@ const Footer = () => {
             <h1 className="font-bold md:text-2xl text-base">Products</h1>
             <p className="md:text-base text-xs">Roadmap</p>
             <p className="md:text-base text-xs">Code editor</p>
-            <p className="md:text-base text-xs">Blog</p>
+            <Link to='/blog'><p className="md:text-base text-xs">Blog</p></Link>
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold md:text-2xl text-base">Company</h1>
@@ -49,10 +63,19 @@ const Footer = () => {
       <div className="flex items-center flex-col w-full md:mt-16 mt-5   font-Poppins text-white">
             <p className="md:text-base text-xs mb-4">Ikuti kami di</p>
             <div className="flex flex-row md:gap-6 gap-3">
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848]"></div>
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8  bg-[#484848]"></div>
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8  bg-[#484848]"></div>
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848]"></div>
+              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img src={ig} alt="" />
+              </div>
+              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img src={yt} alt="" />
+              </div>
+              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img src={tele} alt="" />
+              </div>
+              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img src={fb} alt="" />
+              </div>
+              
             </div>
             <p className="md:text-base text-xs mt-5">© 2023 JalanKodeku · Made with ❤️ by Tim JKtole</p>
 

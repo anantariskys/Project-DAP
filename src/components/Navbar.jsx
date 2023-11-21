@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom';
 const judul = "JalanKodeku </>";
 
 const Navbar = () => {
+  
+
   const [navbar, setNavbar] = useState(false);
   const [hamburger, setHamburger] = useState(false);
   const [active, setActive] = useState(false);
@@ -38,16 +40,17 @@ const Navbar = () => {
   window.addEventListener("scroll", changeBackground);
   return (
     <>
-      <nav style={navbarStyle} className={`${navbar?'backdrop-blur-xl ':'backdrop-blur-none'} z-50  fixed flex h-[80px] w-full justify-between duration-500  ease-in-out   `}>
+      <nav style={navbarStyle} className={`${navbar?'backdrop-blur-xl ':'backdrop-blur-none'} z-50  fixed flex h-[60px] md:h-[80px] w-full justify-between duration-500  ease-in-out   `}>
         <div className="flex flex-row md:gap-10 gap-2  ">
-          <img src={logo} className="h-8 md:h-10 my-auto ml-5 md:ml-20 " alt="" />
+          <img src={logo} className="h-8 md:h-10 my-auto ml-3 md:ml-5  lg:ml-20 " alt="" />
           <h1 className="text-white  md:text-2xl font-Sarpanch my-auto">{judul}</h1>
         </div>
         <div className=" h-full flex flex-row items-center text-white font-bold font-Poppins gap-5 mr-5 md:mr-20 ">
-          <div className="flex bottom-24  md:bottom-0  md:flex-row gap-5 absolute md:relative ">
+          <div className="hidden md:flex  text-xs lg:text-lg  md:bottom-0  md:flex-row gap-2 lg:gap-5   ">
             <h1>Mini Tes</h1>
             <h1>Kode Editor</h1>
-            <h1>Blog</h1>
+            
+            <Link to='/blog'><h1>Blog</h1></Link>
             <h1>Road Map</h1>
           </div>
           {/* <div className="relative">
@@ -86,7 +89,7 @@ const Navbar = () => {
               
             </ul>
           </div>
-          <h1 className="text-base font-semibold font-Poppins text-white border-b-[1px] pb-1">Blog</h1>
+          <Link to='/blog'><h1 className="text-base font-semibold font-Poppins text-white border-b-[1px] pb-1">Blog</h1></Link>
           <h1 className="text-base font-semibold font-Poppins text-white border-b-[1px] pb-1">Kode Editor</h1>
           <h1 className="text-base font-semibold font-Poppins text-white border-b-[1px] pb-1">Mini Tes</h1>
         </div>

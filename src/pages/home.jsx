@@ -8,18 +8,20 @@ import Introduction from '../components/Home/Introduction'
 import Penilaian from '../components/Home/Penilaian'
 import { useEffect } from 'react'
 
+
+
 const home = () => {
   useEffect(() => {
     scrollTo(0,0)
-  
+      
     return () => {
      
     }
   },)
   
   return (
-    <div className="w-full  bg-black  ">
-      <Navbar></Navbar>
+    <div  className="w-full  bg-black  ">
+      <Navbar ></Navbar>
       <Hero></Hero>
       <Slider></Slider>
       <Introduction></Introduction>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
@@ -16,17 +16,29 @@ import ds from "../../assets/roadmap/ds.svg";
 import linkcard from "../../assets/roadmap/link-card.svg";
 import left from "../../assets/roadmap/Left-button.svg";
 import right from "../../assets/roadmap/Right-button.svg";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
 
 
 
 
 
 const Slider = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+
+    
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
   return (
     <>
       <div className="w-full md:mb-64 mb-20  ">
-        <h1 className="text-white font-extrabold text-3xl md:text-5xl text-center font-Poppins mb-10 ">Daftar Road Map</h1>
+        <h1 data-aos="fade-up" className="text-white font-extrabold text-3xl md:text-5xl text-center font-Poppins mb-10 ">Daftar Road Map</h1>
         <Swiper
+  
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}

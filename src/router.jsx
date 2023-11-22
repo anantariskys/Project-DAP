@@ -1,7 +1,7 @@
 import { createBrowserRouter} from "react-router-dom";
 import Home from "./pages/home";
 import Blog from "./pages/blog";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/aboutUs";
 import Auth from "./pages/authPage";
 import Payment from "./pages/payment";
 import Roadmap from "./pages/roadmap";

@@ -1,10 +1,10 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React, { useEffect } from "react";
-import KodeEditor from "../../assets/home/img_kode_editor.svg";
-import Blog from "../../assets/home/img_ninja_blog.svg";
-import Sertifikat from "../../assets/home/img_sertifikat.svg";
-import Forum from "../../assets/home/img_forum.svg";
+import KodeEditor from '../../assets/home/img_kode_editor.svg';
+import Blog from '../../assets/home/img_ninja_blog.svg';
+import Sertifikat from '../../assets/home/img_sertifikat.svg';
+import Forum from '../../assets/home/img_forum.svg';
 
 const Introduction = () => {
   useEffect(() => {

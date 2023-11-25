@@ -3,6 +3,7 @@ import dotline1 from "../assets/roadmapDetail/dotline1.svg";
 import dotline2 from "../assets/roadmapDetail/dotline2.svg";
 import dotline3 from "../assets/roadmapDetail/dotline3.svg";
 import dotline4 from "../assets/roadmapDetail/dotline4.svg";
+import dotline5 from "../assets/roadmapDetail/dotline5.svg";
 const roadmap = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -19,7 +20,7 @@ const roadmap = () => {
   }, []);
 
   return (
-    <div className=" bg-purple-500 mx-auto  w-full   text-white font-Poppins     pb-52">
+    <div className=" bg-black mx-auto  w-full   text-white font-Poppins     pb-52">
       <div className="w-[90%]  mx-auto">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl text-center font-semibold ">Front End Developer Path</h1>
         <p className="text-sm md:text-xl mx-auto text-center">Melangkah Menjadi Frontend Terdepan</p>
@@ -49,7 +50,30 @@ const roadmap = () => {
           <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[20vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">Formulir dan Validasi</div>
         </div>
         <div className="absolute w-[2px] mx-auto lg:w-1 h-[24%] rounded-md top-[48.5%] left-[14%] bg-white"></div>
-        <div className="absolute h-[2px] mx-auto lg:h-1 w-[45%] rounded-md top-[72%] left-[14%] bg-white"></div>
+        <div className="absolute h-[2px] mx-auto lg:h-1 w-[40%] rounded-md top-[72%] left-[14%] bg-white"></div>
+        <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-px absolute left-[54vw] top-[35.3vw]  w-[12%] flex items-center justify-center text-[1vw] text-center  px-2 rounded-xl">JavaScript</div>
+        <img src={dotline5} className="w-[0.1vw] left-[60vw] top-[33.5vw] absolute h-auto" alt="" />
+        <div className="flex flex-col absolute left-[50vw]  top-[25vw]  gap-y-[1px]  lg:gap-y-1">
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[20vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">Belajar Dasar-dasar</div>
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[20vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">Belajar Manipulasi DOM</div>
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[20vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">Fetch API</div>
+        </div>
+        <div className="absolute h-[2px] mx-auto lg:h-1 w-[11.7%] rounded-md top-[72%] left-[66.5vw] bg-white"></div>
+        <div className="absolute w-[2px] mx-auto lg:w-1 h-[9%] rounded-md top-[63.6%] left-[78%] bg-white"></div>
+        <div className="absolute w-[2px] mx-auto lg:w-1 h-[50%] rounded-md top-[63.6%] left-[80%] bg-white"></div>
+        <div className="flex flex-col absolute left-[83vw]  bottom-[26vw]  gap-y-[1px]  lg:gap-y-1">
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[10vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">GIT</div>
+        </div>
+        <img src={dotline5} className="w-[0.1vw] left-[88vw] bottom-[24.3vw] absolute h-auto" alt="" />
+        <div className="flex flex-col absolute left-[73vw]  top-[26vw]  gap-y-[1px]  lg:gap-y-1">
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[20vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">Version Control Systems</div>
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[20vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">VCS Hosting</div>
+
+        </div>
+        <div className="flex flex-col absolute left-[83vw]  bottom-[14vw]  gap-y-[1px]  lg:gap-y-1">
+          <div className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[10vw] flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl">Github</div>
+        </div>
+        <img src={dotline5} className="w-[0.1vw] left-[88vw] bottom-[17vw] absolute h-auto" alt="" />
 
 
         <div className="w-1/4 flex absolute left-[51%] top-[-2%] ">

@@ -19,7 +19,7 @@ const Footer = () => {
     };
   }, []);
   return (
-    <div data-aos="fade-up" className="bg-[#111111] w-full  flex flex-col lg:px-40 md:px-14 px-8 pb-9 md:pt-20 pt-10 " >
+    <div data-aos="fade-up" className="bg-[#111111] w-full z-30  flex flex-col lg:px-40 md:px-14 px-8 pb-9 md:pt-20 pt-10 " >
       <div className="flex flex-col">
         <div className="flex flex-row ">
           <img src={logo} alt="" className="md:w-16 w-9" />

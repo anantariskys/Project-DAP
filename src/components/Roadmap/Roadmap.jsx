@@ -8,6 +8,8 @@ import dotline6 from "../../assets/roadmapDetail/dotline6.svg";
 import dotline7 from "../../assets/roadmapDetail/dotline7.svg";
 import dotline8 from "../../assets/roadmapDetail/dotline8.svg";
 
+import { Link } from "react-router-dom";
+
 const Roadmap = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [showModal, setShowModal] = useState(false);
@@ -542,16 +544,22 @@ const Roadmap = () => {
           orang.
         </p>
         <div className="flex w-full justify-between">
+          
+          <Link to={'/'}>
           <div
             className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[18vw] hover:bg-opacity-60 duration-300 ease-in-out flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl"
           >
             Belum punya duit
           </div>
+          </Link>
+          <Link to='/payment'>
           <div
             className="bg-black bg-opacity-20 border-[0.2vw] mx-auto  border-white border-opacity-20 py-[0.4vw]  w-[18vw] hover:bg-opacity-60 duration-300 ease-in-out flex items-center justify-center text-[1vw] text-center  px-[0.1vw] rounded-xl"
           >
             Dapatkan Sertifikat
           </div>
+          
+          </Link>
         </div>
       </div>
     </div>

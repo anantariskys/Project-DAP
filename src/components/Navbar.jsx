@@ -77,20 +77,20 @@ const Navbar = () => {
         </div>
       </nav>
       <div className={` ${hamburger ? "   bg-transparent  top-0 mt-[60px] " : " top-[-500px]  "} fixed  z-50  w-full  md:hidden duration-1000 transition-all ease-in-out`}>
-        <div className="flex flex-col px-8 w-[90%]  backdrop-blur-3xl gap-y-3  border-l-[1px] border-b-[1px] border-r-[1px] mx-auto pb-6 rounded-xl ">
-          <div className="flex justify-start    px-8">
-            <h3 className="text-lg font-bold font-Poppins text-white">Menu</h3>
+        <div className="flex flex-col px-8 w-[90%]  backdrop-blur-lg gap-y-3  border-l-[1px] border-b-[1px] border-r-[1px] mx-auto pb-6 rounded-xl ">
+          <div className="flex justify-start  ">
+            <h3 className="text-xl font-extrabold  font-Poppins text-white">Menu</h3>
           </div>
           <h1 className="text-base font-semibold font-Poppins text-white border-b-[1px] pb-1">Beranda</h1>
 
           <div className="flex flex-col border-b-[1px] ">
             <div className="flex justify-between">
-              <h1 onClick={handleJumpToSection}  className="text-base w-full font-semibold font-Poppins text-white mt pb-1" onClick={activeHandler}>
+              <h1  className="text-base w-full font-semibold font-Poppins text-white mt pb-1" onClick={activeHandler}>
                 Road Map
               </h1>
               <img onClick={activeHandler} src={arrow} alt="" className={`${active ? "-rotate-180" : "rotate-0"} duration-500 ease-in-out`} />
             </div>
-            <ul className={`transition-max-h duration-300 ease-in-out font-Poppins text-white font-light pl-6 ${active ? "max-h-80" : "max-h-0"} overflow-hidden`}>
+            <ul className={`transition-max-h duration-300 ease-in-out font-Poppins text-white backdrop-blur-lg  font-light pl-6 ${active ? "max-h-80" : "max-h-0"} overflow-hidden`}>
               <li className="before:content-['\2022'] before:w-5 before:h-5 text-base before:mr-2   before:my-auto border-b-[1px] mb-3">Java</li>
               <li className="before:content-['\2022'] before:w-5 before:h-5 text-base before:mr-2   before:my-auto border-b-[1px] mb-3">Python</li>
               <Link to="/roadMap">

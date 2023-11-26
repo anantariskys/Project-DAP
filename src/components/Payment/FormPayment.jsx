@@ -25,7 +25,7 @@ const FormPayment = () => {
     <div className="absolute md:h-screen w-full  items-center flex flex-col justify-center gap-5   ">
       <div className="w-4/5  h-4/5 flex flex-col ">
         <div className="flex gap-8 mb-4">
-          <Link to={'/'}><img src={leftArrow} alt="" /></Link>
+          <Link to={'/roadMap'}><img src={leftArrow} alt="" /></Link>
           <div className="flex flex-row md:gap-7 gap-2  ">
             <div className="sm:shadow-2xl shadow-sm   shadow-black border-t-[1px] border-l-[1px] border-[#5B486E]   backdrop-blur-3xl  p-2 backdrop-brightness-100 rounded-2xl">
               <img className="md:h-7 h-4  relative" draggable="false" src={logo} alt="gagal load" />

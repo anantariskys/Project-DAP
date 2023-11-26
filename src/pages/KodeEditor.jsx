@@ -8,15 +8,14 @@ const KodeEditor = () => {
 
   const handleRunCode = () => {
     try {
-      // Membuat elemen div baru untuk me-render HTML
+     
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = htmlCode;
 
-      // Mengganti isi output dengan hasil render HTML
+ 
       setOutput(tempDiv.outerHTML);
       setError(null);
     } catch (err) {
-      // Menangani kesalahan jika ada
       setOutput("");
       setError(err.toString());
     }

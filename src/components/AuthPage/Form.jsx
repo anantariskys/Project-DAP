@@ -79,8 +79,8 @@ const Form = () => {
         <div className="md:absolute relative w-full h-screen md:h-full bg-gradient-to-b from-[#A35ECD] via-[#23016D] to-[#35957E] blur-3xl md:bottom-0 bottom-48 "></div>
       </div>
       <div className="lg:w-[40rem] w-4/5 md:w-3/5  flex flex-col items-center lg:items-start  z-10 ">
-        <h1 className={`text-2xl md:text-4xl lg:text-2xl font-semibold mb-2  `}>{isLogin ? "Selamat datang kembali !" : "Pendaftaran Akun"}</h1>
-        <p className="text-lg lg:text-base opacity-70 mb-5">{isLogin ? "Masukkan email dan password kamu untuk login ke JalanKodeku." : "Yuk, daftarkan akunmu sekarang juga !"}</p>
+        <h1 className={`text-lg  md:text-2xl font-semibold mb-2  `}>{isLogin ? "Selamat datang kembali !" : "Pendaftaran Akun"}</h1>
+        <p className="text-sm lg:text-base opacity-70 mb-5">{isLogin ? "Masukkan email dan password kamu untuk login ke JalanKodeku." : "Yuk, daftarkan akunmu sekarang juga !"}</p>
         <div className="lg:w-96  w-full   rounded-3xl ">
           <div className="flex justify-center text-base items-center text-center ">
             <h2 onClick={daftarHandler} className={`w-1/2 rounded-tl-3xl py-3  ${isLogin ? "bg-black bg-opacity-40" : " bg-white bg-opacity-20"}`}>

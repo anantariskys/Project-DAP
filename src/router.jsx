@@ -4,7 +4,7 @@ import Blog from "./pages/blog";
 import AboutUs from "./pages/aboutUs";
 import Auth from "./pages/authPage";
 import Payment from "./pages/payment";
-import Roadmap from "./pages/roadmap";
+import RoadmapDetail from "./pages/RoadmapDetail";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     },
     {
       path: "/roadmap",
-      element: <Roadmap/>,
+      element: <RoadmapDetail/>,
     },
   ]);
 

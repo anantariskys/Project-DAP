@@ -12,6 +12,12 @@ const Hero = () => {
       Aos.refresh();
     };
   }, []);
+  const handleJumpToSection = () => {
+    const sliderSection = document.getElementById('slider-section');
+    if (sliderSection) {
+      sliderSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="z-0 flex justify-center items-center h-screen w-full md:mb-0 mb-36">
@@ -24,7 +30,7 @@ const Hero = () => {
         </div>
         <h1 className="text-white md:text-3xl text-lg font-Sarpanch drop-shadow-2xl">JalanKodeku</h1>
         <h1 className="text-white md:text-base text-sm font-Poppins">Your Roadmap to Programming Mastery</h1>
-        <div className="border-[1px] border-gray-400 font-Poppins md:text-sm text-xs font-extrabold text-white border-sm border-solid md:px-10 px-4 py-1 md:backdrop-blur-3xl backdrop-blur p-2 rounded-2xl">MULAI BELAJAR</div>
+        <div onClick={handleJumpToSection} className="border-[1px] hover:bg-black duration-300 ease-in-out cursor-pointer hover:bg-opacity-40 border-gray-400 font-Poppins md:text-sm text-xs font-extrabold text-white border-sm border-solid md:px-10 px-4 py-1 md:backdrop-blur-3xl backdrop-blur p-2 rounded-2xl">MULAI BELAJAR</div>
       </div>
     </div>
   );

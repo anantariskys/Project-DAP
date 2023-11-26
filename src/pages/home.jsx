@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar'
 import Hero from '../components/Home/Hero'
 import Slider from '../components/Home/Slider'
@@ -6,11 +6,12 @@ import InfiniteSlider from '../components/Home/InfiniteSlider'
 import Footer from '../components/Footer'
 import Introduction from '../components/Home/Introduction'
 import Penilaian from '../components/Home/Penilaian'
-import { useEffect } from 'react'
+
 
 
 
 const home = () => {
+ 
   useEffect(() => {
     scrollTo(0,0)
       
@@ -18,11 +19,13 @@ const home = () => {
      
     }
   },)
+
+  
   
   return (
     <div  className="w-full  bg-black  ">
       <Navbar ></Navbar>
-      <Hero></Hero>
+      <Hero ></Hero>
       <Slider></Slider>
       <Introduction></Introduction>
       <InfiniteSlider></InfiniteSlider>

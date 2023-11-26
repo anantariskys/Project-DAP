@@ -36,7 +36,7 @@ const Slider = () => {
   }, []);
   return (
     <>
-      <div className="w-full md:mb-64 mb-20  ">
+      <div id="slider-section" className="w-full md:mb-64 mb-20 pt-14 lg:pt-20    ">
         <h1 data-aos="fade-up" className="text-white font-extrabold text-3xl md:text-5xl text-center font-Poppins mb-10 ">Daftar Road Map</h1>
         <Swiper
   

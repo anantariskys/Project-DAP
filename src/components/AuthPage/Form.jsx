@@ -76,13 +76,13 @@ const Form = () => {
   return (
     <div className="text-white flex justify-center  w-full h-full font-Poppins  z-10 items-center lg:px-36  ">
       <div className="h-3/5 md:h-4/5 lg:h-2/4 absolute w-5/6  blur-3xl z-0 ">
-        h<div className="md:absolute relative w-full h-screen md:h-full bg-gradient-to-b from-[#A35ECD] via-[#23016D] to-[#35957E] blur-3xl md:bottom-0 bottom-48 "></div>
+        <div className="md:absolute relative w-full h-screen md:h-full bg-gradient-to-b from-[#A35ECD] via-[#23016D] to-[#35957E] blur-3xl md:bottom-0 bottom-48 "></div>
       </div>
-      <div className="lg:w-[40rem] w-4/5  flex flex-col items-center lg:items-start  z-10 ">
+      <div className="lg:w-[40rem] w-4/5 md:w-3/5  flex flex-col items-center lg:items-start  z-10 ">
         <h1 className={`text-2xl md:text-4xl lg:text-2xl font-semibold mb-2  `}>{isLogin ? "Selamat datang kembali !" : "Pendaftaran Akun"}</h1>
         <p className="text-lg lg:text-base opacity-70 mb-5">{isLogin ? "Masukkan email dan password kamu untuk login ke JalanKodeku." : "Yuk, daftarkan akunmu sekarang juga !"}</p>
-        <div className="lg:w-96 w-full   rounded-3xl ">
-          <div className="flex justify-center text-xl lg:text-base items-center text-center ">
+        <div className="lg:w-96  w-full   rounded-3xl ">
+          <div className="flex justify-center text-base items-center text-center ">
             <h2 onClick={daftarHandler} className={`w-1/2 rounded-tl-3xl py-3  ${isLogin ? "bg-black bg-opacity-40" : " bg-white bg-opacity-20"}`}>
               Daftar
             </h2>
@@ -94,20 +94,20 @@ const Form = () => {
             {isLogin ? (
               <div>
                 <div className="mb-2 ">
-                  <label className="block text-2xl  lg:text-base mb-1 font-medium ">Email</label>
+                  <label className="block text-base mb-1 font-medium ">Email</label>
                   <input
                     value={formData.email}
                     onChange={handleInputChange}
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-2 py-1 border lg:text-base md:text-xl text-lg bg-opacity-20 border-opacity-30  bg-white border-white rounded-lg "
+                    className="w-full px-2 py-1 border text-sm lg:text-base md:text-xl text-lg bg-opacity-20 border-opacity-30  bg-white border-white rounded-lg "
                     placeholder="Alamat Email"
                     required
                   />
                 </div>
                 <div className="mb-2">
-                  <label htmlFor="password" className="block text-2xl  lg:text-base mb-1 font-medium ">
+                  <label htmlFor="password" className="block text-base mb-1 font-medium ">
                     Password
                   </label>
                   <div className="relative">
@@ -117,7 +117,7 @@ const Form = () => {
                       type={showPassword ? "text" : "password"}
                       id="password"
                       name="password"
-                      className=" w-full px-2 py-1 border lg:text-base md:text-xl text-lg rounded-lg bg-opacity-20 border-opacity-30  bg-white border-white"
+                      className=" w-full px-2 py-1 border text-sm lg:text-base md:text-xl text-lg rounded-lg bg-opacity-20 border-opacity-30  bg-white border-white"
                       placeholder="Password"
                       required
                     />
@@ -151,33 +151,33 @@ const Form = () => {
             ) : (
               <div>
                 <div className="mb-2 ">
-                  <label className="block text-2xl  lg:text-base mb-1 font-medium ">Nama Lengkap</label>
+                  <label className="block text-base mb-1 font-medium ">Nama Lengkap</label>
                   <input
                     value={registrationData.name}
                     onChange={handleRegistrationInputChange}
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-2 py-1 border lg:text-base md:text-xl text-lg bg-opacity-20 border-opacity-30  bg-white border-white rounded-lg "
+                    className="w-full px-2 py-1 border text-sm lg:text-base md:text-xl text-lg bg-opacity-20 border-opacity-30  bg-white border-white rounded-lg "
                     placeholder="Masukkan Nama Lengkap"
                     required
                   />
                 </div>
                 <div className="mb-2 ">
-                  <label className="block text-2xl  lg:text-base mb-1 font-medium ">Email</label>
+                  <label className="block text-base mb-1 font-medium ">Email</label>
                   <input
                     value={formData.email}
                     onChange={handleInputChange}
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-2 py-1 border lg:text-base md:text-xl text-lg bg-opacity-20 border-opacity-30  bg-white border-white rounded-lg "
+                    className="w-full px-2 py-1 border text-sm lg:text-base md:text-xl text-lg bg-opacity-20 border-opacity-30  bg-white border-white rounded-lg "
                     placeholder="Alamat Email"
                     required
                   />
                 </div>
                 <div className="mb-2">
-                  <label htmlFor="password" className="block text-2xl  lg:text-base mb-1 font-medium ">
+                  <label htmlFor="password" className="block text-base mb-1 font-medium ">
                     Password
                   </label>
                   <div className="relative">
@@ -187,7 +187,7 @@ const Form = () => {
                       type={showPassword ? "text" : "password"}
                       id="password"
                       name="password"
-                      className=" w-full px-2 py-1 border lg:text-base md:text-xl text-lg rounded-lg bg-opacity-20 border-opacity-30  bg-white border-white"
+                      className=" w-full px-2 py-1 border text-sm lg:text-base md:text-xl text-lg rounded-lg bg-opacity-20 border-opacity-30  bg-white border-white"
                       placeholder="Password"
                       required
                     />
@@ -207,8 +207,8 @@ const Form = () => {
                     Lupa Password?
                   </a>
                 </div>
-                <button type="submit" onClick={handleRegistration} className="w-full bg-[#3E43FB] text-base md:text-2xl lg:text-base   text-white  py-1 rounded-xl hover:bg-blue-800">
-                  Masuk
+                <button type="submit" onClick={handleRegistration} className="w-full bg-[#3E43FB] text-base   text-white  py-1 rounded-xl hover:bg-blue-800">
+                  Daftar
                 </button>
                 <p className="text-sm mt-4 text-center">Atau sambungkan ke</p>
                 <div className="flex gap-6 justify-center ">

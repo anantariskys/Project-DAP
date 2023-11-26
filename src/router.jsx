@@ -5,7 +5,8 @@ import AboutUs from "./pages/aboutUs";
 import Auth from "./pages/authPage";
 import Payment from "./pages/payment";
 import RoadmapDetail from "./pages/RoadmapDetail";
-
+import KodeEditor from "./pages/KodeEditor";
+import MiniTes from "./pages/MiniTes";
 const router = createBrowserRouter([
     {
       path: "/",
@@ -28,8 +29,16 @@ const router = createBrowserRouter([
       element: <Payment/>,
     },
     {
-      path: "/roadmap",
+      path: "/roadMap",
       element: <RoadmapDetail/>,
+    },
+    {
+      path: "/kodeEditor",
+      element: <KodeEditor/>,
+    },
+    {
+      path: "/miniTest",
+      element: <MiniTes/>,
     },
   ]);
 

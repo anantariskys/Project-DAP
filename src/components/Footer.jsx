@@ -37,8 +37,12 @@ const Footer = () => {
         <div className="lg:flex sm:flex lg:flex-row md:grid md:grid-cols-3 flex-col justify-around w-full  md:gap-4 gap-5">
           <div className="flex flex-col">
             <h1 className="font-bold md:text-2xl text-base">Products</h1>
-            <p className="md:text-base text-xs">Roadmap</p>
-            <p className="md:text-base text-xs">Code editor</p>
+            <Link to='/miniTest'>
+              <p className="md:text-base text-xs">Mini Test</p>
+            </Link>
+            <Link to='/kodeEditor'>
+            <p className="md:text-base text-xs">Kode editor</p>
+            </Link>
             <Link to='/blog'><p className="md:text-base text-xs">Blog</p></Link>
           </div>
           <div className="flex flex-col">

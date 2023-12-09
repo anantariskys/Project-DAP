@@ -141,6 +141,8 @@ const MiniTes = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedQuestion, setSelectedQuestion] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState(Array(questions.length).fill(null));
+  const [questionStatus, setQuestionStatus] = useState(Array(questions.length).fill(false));
+
   const [answers, setAnswers] = useState([]);
   const [isStart, setIsStart] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -158,6 +160,10 @@ const MiniTes = () => {
     const newSelectedOptions = [...selectedOptions];
     newSelectedOptions[currentQuestion] = abcd.option[optionIndex];
     setSelectedOptions(newSelectedOptions);
+
+    const newStatus = [...questionStatus];
+    newStatus[currentQuestion] = true;
+    setQuestionStatus(newStatus);
   };
 
   const handleNext = () => {
@@ -174,43 +180,32 @@ const MiniTes = () => {
     }
   };
   return (
-    <div className={`bg-black h-full ${isStart?'lg:h-screen':'md:h-screen'}  lg:block flex flex-col justify-center gap-y-3 items-center`}>
+    <div className={`bg-black h-full ${isStart ? "lg:h-screen" : "md:h-screen"}  lg:block flex flex-col justify-center gap-y-3 items-center`}>
       {showModal ? (
         <>
-          <div
-            className="justify-center font-Poppins text-white items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="justify-center font-Poppins text-white items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-sm">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black bg-opacity-75 outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">
-                    Apa kamu yakin?
-                  </h3>
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                      ×
-                    </span>
+                  <h3 className="text-3xl font-semibold">Apa kamu yakin?</h3>
+                  <button className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onClick={() => setShowModal(false)}>
+                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
                   </button>
                 </div>
-                
+
                 {/*footer*/}
                 <div className="flex items-center justify-between p-6 border-t border-solid border-blueGray-200 rounded-b">
-                  <button
-                    className="bg-red-500 hover:bg-red-600 font-bold rounded  px-6 py-3 text-sm outline-none  mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
+                  <button className="bg-red-500 hover:bg-red-600 font-bold rounded  px-6 py-3 text-sm outline-none  mr-1 mb-1 ease-linear transition-all duration-150" type="button" onClick={() => setShowModal(false)}>
                     Ngga huhuh:(
                   </button>
                   <button
                     className="bg-emerald-500  hover:bg-emerald-600 font-bold  text-sm px-6 py-3 rounded shadow  outline-none  mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
-                    onClick={() => {setShowModal(false),setIsStart(true)}}
+                    onClick={() => {
+                      setShowModal(false), setIsStart(true);
+                    }}
                   >
                     Yakin !!!
                   </button>
@@ -252,8 +247,8 @@ const MiniTes = () => {
                         setSelectedQuestion(index), setCurrentQuestion(index);
                       }}
                       className={`${
-                        selectedQuestion == index ? "border-2 border-blue-600" : "bg-black  bg-opacity-10"
-                      } w-8 h-8 md:w-10 md:h-10 lg:w-11 lg:h-11  cursor-pointer   border-2 flex justify-center items-center border-white border-opacity-40 rounded-lg`}
+                        selectedQuestion === index ? "border-2 border-blue-600" : questionStatus[index] ? "border-2 border-green-600" : "bg-black border-white bg-opacity-10"
+                      } w-8 h-8 md:w-10 md:h-10 lg:w-11 lg:h-11  cursor-pointer   border-2 flex justify-center items-center  border-opacity-40 rounded-lg`}
                       key={index}
                     >
                       {index + 1}
@@ -341,7 +336,9 @@ const MiniTes = () => {
                 </div>
               </div>
               <div className="md:w-3/5 flex flex-col gap-1 mt-2 md:mt-0 md:gap-3 justify-center items-center">
-                <button onClick={() => setShowModal(true)}  className="w-[85%]  text-base md:text-2xl duration-300 ease-in-out hover:bg-[#359b79] rounded-lg py-1 border-b-2 border-[#00A06A] bg-[#00C985]">Mulai</button>
+                <button onClick={() => setShowModal(true)} className="w-[85%]  text-base md:text-2xl duration-300 ease-in-out hover:bg-[#359b79] rounded-lg py-1 border-b-2 border-[#00A06A] bg-[#00C985]">
+                  Mulai
+                </button>
                 <button className="w-[85%]  text-base md:text-2xl duration-300 ease-in-out hover:bg-[#7246a1] rounded-lg py-1 border-b-2 border-[#6C4298] bg-[#8854C0]">Papan Peringkat</button>
                 <button className="w-[85%]  text-base md:text-2xl duration-300 ease-in-out hover:bg-[#7246a1] rounded-lg py-1 border-b-2 border-[#6C4298] bg-[#8854C0]">Kisi Kisi</button>
               </div>
@@ -349,7 +346,6 @@ const MiniTes = () => {
           </div>
         </div>
       )}
-         
     </div>
   );
 };

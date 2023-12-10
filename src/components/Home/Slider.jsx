@@ -101,12 +101,12 @@ const Slider = () => {
           className="swiper_container  pb-10 "
         >
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={java} className="mx-auto mb-3 h-24  " alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={java} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out  " alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Java</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Belajar bahasa java mulai dari fundamental</p>
               <a href="/">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>
@@ -114,12 +114,12 @@ const Slider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={python} className="mx-auto mb-3 h-24" alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={python} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out" alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Python</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Langkah demi langkah untuk menjadi python developer</p>
               <a href="/">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>
@@ -127,12 +127,12 @@ const Slider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={fe} className="mx-auto mb-3 h-24 " alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={fe} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out " alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Frontend</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Melangkah Menjadi Frontend terdepan</p>
               <Link to="/roadmap">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>
@@ -140,12 +140,12 @@ const Slider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={be} className="mx-auto mb-3 h-24" alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={be} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out" alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Backend</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Menjadi Backend Developer yang kompeten</p>
               <a href="/">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>
@@ -153,12 +153,12 @@ const Slider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={cs} className="mx-auto mb-3 h-24" alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={cs} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out" alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Cyber Security</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Menjadi seorang ahli keamanan siber</p>
               <a href="/">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>
@@ -166,12 +166,12 @@ const Slider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={android} className="mx-auto mb-3 h-24" alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={android} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out" alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Android</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Menjadi Android developer ternama</p>
               <a href="/">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>
@@ -179,12 +179,12 @@ const Slider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-opacity-10 border-[1px]  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
-              <img src={ds} className="mx-auto mb-3 h-24 " alt="" />
+            <div className="bg-opacity-10 border group  shadow-md bg-white p-6 w-72 md:w-80 mx-auto  rounded-[50px]">
+              <img src={ds} className="mx-auto mb-3 h-24 group-hover:scale-[1.15] duration-500 transition-transform ease-in-out " alt="" />
               <h1 className="text-white text-3xl font-Poppins font-extrabold mb-2">Data Scientist</h1>
               <p className="text-xl text-white font-Poppins h-20 leading-7 mb-9">Belajar menjadi data scientist</p>
               <a href="/">
-                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
+                <div className="w-28 p-2 gap-3 mb-14 border-[1px]  bg-slate-400 hover:bg-slate-700 hover:bg-opacity-20 duration-300 ease-in-out bg-opacity-20 rounded-3xl flex justify-center flex-row text-white font-Poppins align-middle">
                   <p>Eksplor</p>
                   <img src={linkcard} alt="" />
                 </div>

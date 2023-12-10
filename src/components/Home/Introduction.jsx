@@ -18,9 +18,9 @@ const Introduction = () => {
   return (
     <>
       <div className="w-5/6 mx-auto mb-28  ">
-        <h1 data-aos="fade-up" className="md:text-5xl text-2xl font-extrabold text-center font-Poppins text-white md:mb-16 mb-2">Kode Editor</h1>
+        <h1 data-aos="fade-up" className="md:text-5xl text-2xl  font-extrabold text-center font-Poppins text-white md:mb-16 mb-2">Kode Editor</h1>
         <div data-aos="fade-up"   className="flex md:flex-row flex-col  justify-start gap-14">
-          <img  src={KodeEditor} className="rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover" alt="" />
+          <img  src={KodeEditor} draggable='false' className="hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover" alt="" />
           <div  className="flex flex-col font-Poppins text-white">
             <h2  className="lg:text-3xl md:text-xl text-base font-extrabold md:mb-10 mb-2 lg:mt-6 mt-1">Berlatih langsung dari dalam browser</h2>
             <p className="lg:text-2xl md:text-base text-sm font-medium leading-relaxed text-left">
@@ -31,9 +31,9 @@ const Introduction = () => {
         </div>
       </div>
       <div className="w-5/6 mx-auto mb-28 ">
-        <h1 data-aos="fade-up" className="md:text-5xl text-2xl font-extrabold text-center font-Poppins text-white  md:mb-16 mb-2">Blog</h1>
+        <h1 data-aos="fade-up" className="md:text-5xl text-2xl  font-extrabold text-center font-Poppins text-white  md:mb-16 mb-2">Blog</h1>
         <div data-aos="fade-up"   className="flex md:flex-row-reverse flex-col  justify-start gap-14">
-          <img  src={Blog} className="rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover object-top" alt="" />
+          <img  src={Blog} draggable='false' className="hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover object-top" alt="" />
           <div  className="flex flex-col font-Poppins text-white">
             <h2 className="lg:text-3xl md:text-xl text-base font-extrabold md:mb-10 mb-2 lg:mt-6 mt-1 md:text-right">Segala Informasi Seputar Ngoding</h2>
             <p className="lg:text-2xl md:text-base text-sm font-medium leading-relaxed md:text-right">
@@ -43,9 +43,9 @@ const Introduction = () => {
         </div>
       </div>
       <div className="w-5/6 mx-auto mb-28  ">
-        <h1 data-aos="fade-up" className="md:text-5xl text-2xl font-extrabold text-center font-Poppins text-white md:mb-16 mb-2">Sertifikat</h1>
+        <h1 data-aos="fade-up" className="md:text-5xl text-2xl  font-extrabold text-center font-Poppins text-white md:mb-16 mb-2">Sertifikat</h1>
         <div data-aos="fade-up"  className="flex md:flex-row flex-col  justify-start gap-14">
-          <img  src={Sertifikat} className="rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover" alt="" />
+          <img  src={Sertifikat} draggable='false' className="hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover" alt="" />
           <div  className="flex flex-col font-Poppins text-white">
             <h2 className="lg:text-3xl md:text-xl text-base font-extrabold md:mb-10 mb-2 lg:mt-6 mt-1">Validasi Skill Kamu</h2>
             <p className="lg:text-2xl md:text-base text-sm font-medium leading-relaxed text-left">
@@ -55,9 +55,9 @@ const Introduction = () => {
         </div>
       </div>
       <div className="w-5/6 mx-auto mb-28  ">
-        <h1 data-aos="fade-up" className="md:text-5xl text-2xl font-extrabold text-center font-Poppins text-white  md:mb-16 mb-2">Forum</h1>
+        <h1 data-aos="fade-up" className="md:text-5xl text-2xl  font-extrabold text-center font-Poppins text-white  md:mb-16 mb-2">Forum</h1>
         <div data-aos="fade-up"  className="flex md:flex-row-reverse flex-col  justify-start gap-14">
-          <img  src={Forum} className="rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover object-top" alt="" />
+          <img  src={Forum} draggable='false' className="hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl md:h-96 h-52 md:aspect-auto aspect-video md:object-none object-cover object-top" alt="" />
           <div  className="flex flex-col font-Poppins text-white">
             <h2 className="lg:text-3xl md:text-xl text-base font-extrabold md:mb-10 mb-2 lg:mt-6 mt-1 md:text-right">Kesulitan? Jangan kuatir!</h2>
             <p className="lg:text-2xl md:text-base text-sm font-medium leading-relaxed md:text-right">

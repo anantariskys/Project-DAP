@@ -16,7 +16,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='h-screen w-full relative'>
+    <div className='lg:h-screen w-full relative'>
       {loading ? (
         <Skeleton height={500} width='100%' duration={2} />
       ) : (

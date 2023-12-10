@@ -67,17 +67,17 @@ const Footer = () => {
       <div className="flex items-center flex-col w-full md:mt-16 mt-5   font-Poppins text-white">
             <p className="md:text-base text-xs mb-4">Ikuti kami di</p>
             <div className="flex flex-row md:gap-6 gap-3">
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
-                <img src={ig} alt="" />
+              <div className="rounded-full md:h-10 group hover:bg-[#2f2f2f] duration-300 ease-in-out md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img className='group-hover:rotate-12 group-hover:scale-75 duration-300 ease-in-out'  src={ig} alt="" />
               </div>
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
-                <img src={yt} alt="" />
+              <div className="rounded-full md:h-10 group hover:bg-[#2f2f2f] duration-300 ease-in-out md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img className='group-hover:rotate-12 group-hover:scale-75 duration-300 ease-in-out' src={yt} alt="" />
               </div>
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
-                <img src={tele} alt="" />
+              <div className="rounded-full md:h-10 group hover:bg-[#2f2f2f] duration-300 ease-in-out md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img className='group-hover:rotate-12 group-hover:scale-75 duration-300 ease-in-out' src={tele} alt="" />
               </div>
-              <div className="rounded-full md:h-10 md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
-                <img src={fb} alt="" />
+              <div className="rounded-full md:h-10 group hover:bg-[#2f2f2f] duration-300 ease-in-out md:w-10 h-8 w-8 bg-[#484848] flex justify-center items-center">
+                <img className='group-hover:rotate-12 group-hover:scale-75 duration-300 ease-in-out' src={fb} alt="" />
               </div>
               
             </div>
